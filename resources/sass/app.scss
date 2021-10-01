@@ -1,0 +1,334 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+  font-size: 1rem;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.text-custom{
+  color: #4F2915;
+}
+
+.b-left{
+  border-left: 5px solid #C9462D!important;
+}
+
+.btn-active{
+background-color: #4F2915!important;
+border-color: #4F2915!important;
+}
+
+.services-link{
+  text-decoration: none;
+  color: #212529;
+}
+
+.services-link:hover{
+  text-decoration: none;
+  color: #212529;
+}
+
+.btn-outline-custom {
+    color: #4F2915;
+    border-color: #4F2915;
+}
+
+.btn-outline-custom:hover {
+    color: #fff;
+    background-color: #4F2915;
+}
+
+.btn-custom{
+  color: #fff;
+  background-color: #C9462D;
+  border-color: #C9462D;
+}
+
+.btn-custom:hover{
+  color: #fff;
+  background-color: #4F2915;
+  border-color: #4F2915;
+}
+
+.progress-bar {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #C9462D;
+}
+
+// Кастомные элементы формы
+
+.checkbox-other {
+  display: block;
+  margin: 0 0 10px 0;
+  line-height: 22px;
+}
+.checkbox-other input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0 5px 0 0;
+  padding: 0;
+  vertical-align: top;
+  outline: none;
+  transition: background 0.3s ease;
+  background: url(https://snipp.ru/uploads/contents/checkbox-1.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+/* Checked */
+.checkbox-other input[type=checkbox]:checked {
+  background-image: url(https://snipp.ru/uploads/contents/checkbox-2.png);
+}
+
+/* Focus */
+.focused input[type=checkbox] {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover */
+.checkbox-other input[type=checkbox]:hover {
+  filter: brightness(110%);
+}
+
+/* Active */
+.checkbox-other input[type=checkbox]:active {
+  filter: brightness(80%);
+}
+
+/* Disabled */
+.checkbox-other input[type=checkbox]:disabled {
+  color: #666;
+  cursor: default;
+}
+.checkbox-other input[type=checkbox]:disabled {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+
+.form_radio_group {
+  display: inline-block;
+  overflow: hidden;
+
+}
+.form_radio_group-item {
+  display: inline-block;
+  float: left;
+}
+.form_radio_group input[type=radio] {
+  display: none;
+}
+.form_radio_group label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #999;
+  border-right: none;
+  user-select: none;
+}
+
+
+.form_radio_group .form_radio_group-item:first-child label {
+  border-radius: 6px 0 0 6px;
+}
+.form_radio_group .form_radio_group-item:last-child label {
+  border-radius: 0 6px 6px 0;
+  border-right: 1px solid #999;
+}
+
+/* Checked */
+.form_radio_group input[type=radio]:checked + label {
+  background: #ffe0a6;
+}
+
+/* Hover */
+.form_radio_group label:hover {
+  color: #666;
+}
+
+/* Disabled */
+.form_radio_group input[type=radio]:disabled + label {
+  background: #efefef;
+  color: #666;
+}
+
+.form_radio {
+  margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+  display: none;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.form_radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(https://snipp.ru/img/radio-1.png) 0 0 no-repeat;
+}
+
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+  background: url(https://snipp.ru/img/radio-2.png) 0 0 no-repeat;
+}
+
+/* Hover */
+.form_radio label:hover:before {
+  filter: brightness(120%);
+}
+
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}
+
+/* вкладки*/
+.tabs {
+ margin-left: auto;
+ margin-right: auto;
+}
+.tabs__caption {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  margin: -1px 0 0 -1px;
+
+}
+.tabs__caption li:last-child:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: -2px;
+  z-index: -1;
+  height: 5px;
+  background: #C9462D;
+}
+.tabs__caption:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.tabs__caption li {
+  padding: 9px 15px;
+  margin: 1px 0 0 1px;
+  background: #FFFFFF;
+  color: #C9462D;
+  position: relative;
+  border: solid #C9462D;
+  border-width: 2px 2px 0;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+.tabs__caption li:not(.active) {
+  cursor: pointer;
+}
+.tabs__caption li:not(.active):hover {
+  background: #C9462D;
+  color: #FFFFFF;
+  border-color: #C9462D;
+}
+
+.text-custom{
+  color: #4F2915;
+}
+
+.list-group-item-custom {
+  color: #4F2915;
+  background-color: #fff;
+}
+
+.list-group-item-custom.list-group-item-action:hover,
+.list-group-item-custom.list-group-item-action:focus {
+  color: #fff;
+  background-color: #C9462D;
+}
+
+.list-group-item-custom.list-group-item-action.active {
+  color: #fff;
+  background-color: #4F2915;
+  border-color: #4F2915;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Кнопка добавить поле в форме КИ */
+.add
+{
+  width: 300px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px dashed #C9462D;
+  margin: 10px 0;
+}
+@media (max-width: 576px) {
+  .add {
+    width: 250px;
+  }
+}
+
+.add:hover
+{
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #C9462D;
+}
+
+.divsection4 {
+  background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url(/storage/img/fonblock.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.text-custom{
+  color: #C9462D;
+}
+
+.text-custom-dark{
+  color: #4F2915;
+}
+
+.bg-custom-gray{
+  background-color: #F0F0F0;
+}
